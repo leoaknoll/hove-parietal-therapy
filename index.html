@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosie Smith Therapy</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 60px;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#696D7D;
+letter-spacing:0.5px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#696D7D;
+font-weight:500;
+font-size:17px;
+position:relative;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#8FC0A9;
+left:0;
+bottom:-6px;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* SECTIONS */
+
+section{
+min-height:100vh;
+padding:120px 10%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* HERO */
+
+.hero{
+background:#8FC0A9;
+color:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.hero-text{
+max-width:450px;
+}
+
+.hero-text h1{
+font-size:3.5rem;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:1.2rem;
+line-height:1.6;
+}
+
+/* IMAGE */
+
+.hero-image{
+width:360px;
+height:460px;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.hero-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* OTHER SECTIONS */
+
+.section1{
+background:#C8D5B9;
+color:#2f3e2f;
+}
+
+.section2{
+background:#FAF3DD;
+color:#696D7D;
+}
+
+.section3{
+background:#68B0AB;
+color:white;
+}
+
+.content{
+max-width:700px;
+text-align:center;
+}
+
+.content h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.content p{
+font-size:1.2rem;
+line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">Hove Parenatal Therapy</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+<h1>Hove Parenatal Therapy</h1>
+
+<p>
+A calm and supportive space focused on wellbeing and personal growth.
+This website introduces the services offered and how to get in touch.
+</p>
+
+</div>
+
+<div class="hero-image">
+<img src="rosie_smith.jpeg" alt="Rosie Smith">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section1">
+
+<div class="content">
+<h2>About</h2>
+
+<p>
+This section can introduce Rosie Smith and explain her therapy approach,
+experience, and philosophy for supporting clients.
+</p>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="section2">
+
+<div class="content">
+<h2>Services</h2>
+
+<p>
+Describe the types of therapy offered here such as counselling,
+wellbeing sessions, or support programmes.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section3">
+
+<div class="content">
+<h2>Contact</h2>
+
+<p>
+Provide email, phone number, or a booking link so visitors
+can arrange an appointment.
+</p>
+
+</div>
+
+</section>
+
+</body>
+</html>
